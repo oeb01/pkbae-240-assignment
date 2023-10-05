@@ -1,0 +1,427 @@
+
+@font-face {
+    font-family: Inter; /** downloaded google font for blog page**/
+    src: url(./fonts/Inter-Regular.ttf);
+    font-weight: normal;
+  }   
+
+  @font-face {
+    font-family: Inter-Bold; /** downloaded google font for blog page**/
+    src: url(./fonts/Inter-Bold.ttf);
+    font-weight: normal;
+  }   
+
+  @font-face {
+    font-family: Inter-Light; /** downloaded google font for blog page**/
+    src: url(./fonts/Inter-Light.ttf);
+    font-weight: normal;
+  }   
+
+  @font-face {
+    font-family: Inter-Thin; /** downloaded google font for blog page**/
+    src: url(./fonts/Inter-Thin.ttf);
+    font-weight: normal;
+  }   
+
+  @font-face {
+    font-family: Kanit; /** downloaded google font for blog page**/
+    src: url(./fonts/Kanit-Regular.ttf);
+    font-weight: normal;
+  }   
+  
+  @font-face {
+    font-family: Kanit-Light; /** downloaded google font for blog page**/
+    src: url(./fonts/Kanit-LightItalic.ttf);
+    font-weight: normal;
+  }   
+  
+
+  *{
+    font-family: Inter;
+  }
+/** all ids **/
+body{
+    background-color: black;
+}
+
+
+  #learn{
+    z-index: 2;
+    font-family: Inter-Thin;
+  }
+
+  #head{
+    color: white;
+  }
+
+
+
+/** all classes **/
+
+.flex-container {
+    display: flex;
+    background-color: #D4CBB3;
+    justify-content: space-evenly;
+    padding: 20px;
+    font-size: 2vw;
+    z-index: 5;
+    width: 100%;
+    position: fixed;
+    color:black ;
+  }
+
+  .flex-container2{
+    display: flex;
+    background-color: #9DAB96;
+    justify-content: space-evenly;
+    padding: 5px;
+    font-size: 1.5vw;
+    margin-top:5%;
+    z-index: 5;
+    width: 100%;
+    position: fixed;
+    border: 2px solid black;
+    color:black ;
+  }
+
+  .flex-container2 a{
+    font-family: Kanit-Light;
+    font-weight:100;
+    color: black;
+  }
+  
+  .flex-container2 a:hover{
+    text-decoration: underline;
+
+  }
+
+
+    .name-container{
+    color: hsl(9, 35%, 72%);
+    font-size:4vw;
+    top:30px;
+    margin: 10px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+  }
+
+   .name-container h1{
+    font-family: Inter-Bold;
+    padding: 10px;
+
+   }
+
+   .name-container h2{
+    display: inline-block;
+    color: white;
+    font-size:5vw;
+    position: absolute;
+    z-index: 1;
+    top: 70%;
+    margin: 10px;
+    padding: 10px;
+    font-family: Inter-Bold;
+   }
+
+ 
+
+  .discover{
+    z-index:1;
+    position: absolute;
+    font-family: Inter-Thin;
+    color: white;
+    font-size: 1.5vw;
+    border-radius: 70px;
+    background: black;
+    padding: 20px; 
+    width: 30%;
+    height: 5%;
+    top: 60%;
+    left: 50px;
+    border: 2px solid white;
+    text-align: center;
+
+    }
+
+    .flexbox {
+        display: flex;
+        width:100%;
+        background-color: #D1A7A0;
+        justify-content: space-around;
+        font-size: 1.5vw;
+
+
+      }
+      
+    .flexbox p {
+        margin: 10px;
+        padding: 20px;
+        font-size: 3vw;
+        text-decoration: underline;
+        font-family: Inter-Bold;
+        text-align: center;
+    }
+
+      .flexbox h2 {
+    z-index: 6;
+    position: absolute;
+    color: white;
+    font-size: 1.5vw;
+    border-radius: 70px;
+    background: black;
+    padding: 20px; 
+    width: 30%;
+    height: 5%;
+    margin-top: 28%;
+    margin-left:9%;
+    font-family: Inter-Thin;
+    text-align: center;
+    border: 2px solid white;
+    
+      }
+
+
+      /** hovers and link  changes **/
+
+      .flex-container a {
+        font-family: Kanit;
+        color: black;
+      }
+
+    
+      .flex-container a:hover{
+        color: #D1A7A0;
+
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .flexbox h2:hover{
+        color: black;
+        background: white;
+      }
+
+      .discover a{
+        color: #D1A7A0;
+      }
+ 
+      .discover:hover{
+        background: white;
+        color: black;
+      }
+
+
+      #head{
+        text-align: center;
+        margin: 30px;
+        color:white;
+        padding: 20px;
+        font-size: 1.5vw;
+        font-family: Inter-Bold;
+      }
+
+   
+      .memories{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        color: white;
+        text-align: center;
+        font-size: 1vw;
+      }
+
+      .memories h3{
+        font-family: Inter-Light;
+      }
+      .memories img{
+        flex-direction: row;
+      }
+    
+      .F img{
+        width: 300px;
+        height: 370px;
+      }
+      .C img{
+        width: 300px;
+        height: 370px;
+      }
+      .S img{
+        width: 300px;
+        height: 370px;
+      }
+
+      .B img{
+        width: 300px;
+        height: 370px;
+      }
+
+      
+
+
+
+
+      /** Media Queries**/
+
+      /** iPad Air media query**/
+
+      @media screen and (max-width: 820px) {
+        .flexbox {
+            flex-direction: column;
+            text-align: center
+            font;
+            margin-top: auto;
+            font-size: 3vw;
+          } 
+          .flexbox p{
+            font-size: 4vw;
+        }
+
+        .flexbox pre{
+            text-align: center
+        }
+
+        .flexbox h2 {
+            text-align: center;
+            width: 40%;
+            margin-top: auto;
+            margin-left: 230px ;
+            padding: 10px;
+            margin-bottom: auto;
+            font-size: 2vw;
+      }
+
+      .name-container h2{
+        top:120px;
+      }
+
+      .discover{
+            top:300px;
+            width:230px ;
+            height: 30px;
+            padding: 3px;
+            text-align: center;
+        }
+        .discover:hover{
+            color: black;
+            background: white;
+          }
+
+
+
+        .memories{
+            flex-direction: column;
+            width: 70%;
+        }
+
+        .memories{
+            margin-left: 15%
+        }
+
+        .flexbox h2{
+            height: 2%;
+        }
+
+        .flex-container2{
+            margin-top: 7%;
+        }
+
+        .F img{
+            width: 400px;
+            height: 545px;
+        }
+        .C img{
+            width: 400px;
+            height: 545px;
+        }
+        .S img{
+            width: 400px;
+            height: 545px;
+        }
+        .B img{
+            width: 400px;
+            height: 545px;
+        }
+        
+        #head{
+            font-size: 5vw;
+        }
+
+        .memories h3{
+            font-size: 3vw;
+        }
+
+      }
+
+   /** iPhone 12 media query**/
+      @media screen and (max-width: 390px) {
+
+        .flex-container1{
+            padding: 5px;
+            margin: 5px;
+        }
+        .flex-container2{
+            width: 95%;
+            margin-top: 12%;
+        }
+
+        .flexbox h2{
+         margin-left: 25%;
+        }
+    #head{
+        font-size: 2.3vw;
+        margin: 5px;
+    }
+    .nyc img{
+        margin-top: 20%;
+        }
+
+        .memories{
+            margin-left: 12%;
+
+        }
+        .memories h3{
+            font-size: 2vw;
+          }
+
+          .name-container h2{
+            top: 55%;
+            width: auto;
+          }
+
+        .F img{
+            width: 280px;
+            height: 345px;
+          }
+
+          .C img{
+            width: 280px;
+            height: 345px;
+          }
+          .S img{
+            width: 280px;
+            height: 345px;
+          }
+    
+          .B img{
+            width: 280px;
+            height: 345px;
+          }
+          .discover{
+            top:200px;
+            width:130px ;
+            height: 15px;
+            padding: 3px;
+            text-align: center;
+        }
+        #head{
+            font-size: 5vw;
+        }
+
+        .memories h3{
+            font-size: 3vw;
+        }
+
+      }
